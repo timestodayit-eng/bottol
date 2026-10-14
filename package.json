@@ -4,12 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite --host 0.0.0.0\" \"node --watch server/index.js\"",
-    "build": "vite build",
-    "start": "npm run build && node server/index.js",
-    "check": "node --check server/index.js",
-    "create-admin": "node server/create-admin.js"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "start": "npm run build && node server/index.js"
+},
   "dependencies": {
     "@aws-sdk/client-s3": "^3.800.0",
     "@aws-sdk/s3-request-presigner": "^3.800.0",
