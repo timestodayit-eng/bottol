@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"vite --host 0.0.0.0\" \"node --watch server/index.js\"",
     "build": "vite build",
-    "start": "node server/index.js",
+    "start": "npm run build && node server/index.js",
     "check": "node --check server/index.js",
     "create-admin": "node server/create-admin.js"
   },
